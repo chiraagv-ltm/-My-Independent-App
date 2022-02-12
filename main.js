@@ -1,8 +1,6 @@
-one=document.getElementById("height").value;
-two=document.getElementById("weight").value;
+var bmi="";
 
 function calculate(){
-    let bmi = (two / ((one * one) 
-    / 10000)).toFixed(2);
-    document.getElementById("output").innerHTML= bmi;
+    bmi=703*(Number(document.getElementById("weight").value)/(Number(document.getElementById("height").value)*Number(document.getElementById("height").value)));
+    document.getElementById("output").innerHTML= Math.floor(bmi);
 }
